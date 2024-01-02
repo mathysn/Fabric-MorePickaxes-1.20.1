@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:redstone"
+    },
+    "R": {
+      "item": "morepickaxes:ruby"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    " S ",
+    "RE "
+  ],
+  "result": {
+    "item": "morepickaxes:metal_detector"
+  },
+  "show_notification": true
+}

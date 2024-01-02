@@ -1,0 +1,13 @@
+{
+  "item.morepickaxes.ruby": "Ruby",
+  "item.morepickaxes.metal_detector": "Metal Detector",
+
+  "block.morepickaxes.ruby_block": "Block of Ruby",
+
+  "block.morepickaxes.ruby_ore": "Ruby Ore",
+  "block.morepickaxes.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "tooltip.morepickaxes.metal_detector": "Find valuable ores underground!",
+
+  "itemgroup.more_pickaxes": "More Pickaxes"
+}

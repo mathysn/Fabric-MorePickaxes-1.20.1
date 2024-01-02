@@ -2,6 +2,9 @@ package net.sij.morepickaxes;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.sij.morepickaxes.block.ModBlocks;
+import net.sij.morepickaxes.item.ModItemGroups;
+import net.sij.morepickaxes.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +14,9 @@ public class MorePickaxes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

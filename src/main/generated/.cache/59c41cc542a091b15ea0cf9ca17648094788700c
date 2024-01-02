@@ -1,0 +1,12 @@
+// 1.20.1	2024-01-02T18:49:59.4183639	More Pickaxes/Model Definitions
+321257fc02414aa1859d3f109ab78410b657c611 assets\morepickaxes\models\block\ruby_block.json
+ac51c0ac6ef7c18df30d8a6dbcc5b18f62da0af3 assets\morepickaxes\models\item\ruby_block.json
+4a2adadd22c6f45ae260817d8a514b2966118eff assets\morepickaxes\blockstates\ruby_block.json
+47719c1defeb2de48ba9d131ace4fd691e766d1e assets\morepickaxes\blockstates\deepslate_ruby_ore.json
+7500868fbbc759378c5e7bbf2e9c61420ccea17a assets\morepickaxes\models\item\deepslate_ruby_ore.json
+6239eefbafc96264cb44e0dc5dbe829269124419 assets\morepickaxes\models\item\ruby_ore.json
+1bc6e314740fe0afc0cbd21fe29c3611a660f817 assets\morepickaxes\models\item\metal_detector.json
+d7cddf11cb75f6e23756f55255f7b93ea13d55bf assets\morepickaxes\blockstates\ruby_ore.json
+dc8a89b101cb1b254bf014a5a4f33b0b52947e29 assets\morepickaxes\models\block\ruby_ore.json
+fafc42c359be9c7af3a9bb9e9b42df04d0d400dd assets\morepickaxes\models\item\ruby.json
+3e03f23cf8660ee9d1c1938786d8341862006e00 assets\morepickaxes\models\block\deepslate_ruby_ore.json

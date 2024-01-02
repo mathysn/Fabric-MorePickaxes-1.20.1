@@ -1,0 +1,6 @@
+// 1.20.1	2024-01-02T18:49:59.4220064	More Pickaxes/Tags for minecraft:block
+8d2f4531e6dafa4a6ee679b67a83b90b1209047e data\morepickaxes\tags\blocks\metal_detector_detectable_blocks.json
+e3425c92a70b98ecde8e3af1200ee292738b533a data\minecraft\tags\blocks\needs_tool_level_4.json
+66ce1f639ebea5b0a3de40ca45a661a09a15b0a6 data\morepickaxes\tags\blocks\ruby_ores.json
+b072db12abefee57d602e3ae315f72bb46b95b1c data\minecraft\tags\blocks\mineable\pickaxe.json
+b072db12abefee57d602e3ae315f72bb46b95b1c data\minecraft\tags\blocks\needs_iron_tool.json
