@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morepickaxes",
+	"version": "${version}",
+	"name": "More Pickaxes",
+	"description": "A Fabruc mod that adds more pickaxes to the game.",
+	"authors": [
+		"sij!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/morepickaxes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sij.morepickaxes.MorePickaxes"
+		],
+		"client": [
+			"net.sij.morepickaxes.MorePickaxesClient"
+		],
+		"fabric-datagen": [
+			"net.sij.morepickaxes.MorePickaxesDataGenerator"
+		]
+	},
+	"mixins": [
+		"morepickaxes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
