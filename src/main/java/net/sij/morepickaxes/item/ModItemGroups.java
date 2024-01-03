@@ -20,6 +20,8 @@ public class ModItemGroups {
                         // Items
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.RUBY_PICKAXE);
+                        entries.add(ModItems.OBSIDIAN_PICKAXE);
 
                         // Blocks
                         entries.add(ModBlocks.RUBY_BLOCK);

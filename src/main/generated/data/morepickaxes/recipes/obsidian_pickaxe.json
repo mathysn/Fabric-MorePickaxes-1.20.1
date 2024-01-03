@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "OOO",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "morepickaxes:obsidian_pickaxe"
+  },
+  "show_notification": true
+}

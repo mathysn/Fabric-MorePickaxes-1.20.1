@@ -25,5 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.RUBY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.OBSIDIAN_PICKAXE, Models.HANDHELD);
     }
 }

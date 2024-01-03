@@ -22,7 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         // Ruby Ores Tag
         getOrCreateTagBuilder(ModTags.Blocks.RUBY_ORES)
-                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE);
 
         // Metal Detector Detectable Blocks Tag
