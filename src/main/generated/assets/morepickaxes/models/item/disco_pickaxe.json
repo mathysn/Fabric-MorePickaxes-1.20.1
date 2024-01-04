@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "morepickaxes:item/disco_pickaxe"
+  }
+}

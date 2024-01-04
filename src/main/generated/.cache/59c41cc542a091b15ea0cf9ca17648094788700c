@@ -1,9 +1,10 @@
-// 1.20.1	2024-01-03T14:05:48.2169991	More Pickaxes/Model Definitions
+// 1.20.1	2024-01-03T19:23:49.8464987	More Pickaxes/Model Definitions
 ac51c0ac6ef7c18df30d8a6dbcc5b18f62da0af3 assets\morepickaxes\models\item\ruby_block.json
 a575eec502c9c6564ee703a5b5092291561b1d98 assets\morepickaxes\models\item\obsidian_pickaxe.json
 79471f893e46949a5294fc459862d45057c6601e assets\morepickaxes\models\item\ruby_pickaxe.json
 47719c1defeb2de48ba9d131ace4fd691e766d1e assets\morepickaxes\blockstates\deepslate_ruby_ore.json
 6239eefbafc96264cb44e0dc5dbe829269124419 assets\morepickaxes\models\item\ruby_ore.json
+4c365feb0966e4d93d73bb8f15585711aabc1959 assets\morepickaxes\models\item\disco_pickaxe.json
 dc8a89b101cb1b254bf014a5a4f33b0b52947e29 assets\morepickaxes\models\block\ruby_ore.json
 fafc42c359be9c7af3a9bb9e9b42df04d0d400dd assets\morepickaxes\models\item\ruby.json
 321257fc02414aa1859d3f109ab78410b657c611 assets\morepickaxes\models\block\ruby_block.json

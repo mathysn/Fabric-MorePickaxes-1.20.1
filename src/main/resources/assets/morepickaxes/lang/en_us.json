@@ -4,6 +4,7 @@
 
   "item.morepickaxes.ruby_pickaxe": "Ruby Pickaxe",
   "item.morepickaxes.obsidian_pickaxe": "Obsidian Pickaxe",
+  "item.morepickaxes.disco_pickaxe": "Disco Pickaxe",
 
   "block.morepickaxes.ruby_block": "Block of Ruby",
 
@@ -11,6 +12,9 @@
   "block.morepickaxes.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
   "tooltip.morepickaxes.metal_detector": "Find valuable ores underground!",
+
+  "sounds.morepickaxes.metal_detector_found_ore": "Metal Detector Sound",
+  "sounds.morepickaxes.disco_pickaxe_music": "Disco Pickaxe Music",
 
   "itemgroup.more_pickaxes": "More Pickaxes"
 }

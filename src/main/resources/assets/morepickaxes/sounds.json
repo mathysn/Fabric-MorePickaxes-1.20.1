@@ -1,0 +1,29 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.morepickaxes.metal_detector_found_ore",
+    "sounds": [
+      "morepickaxes:metal_detector_found_ore"
+    ]
+  },
+  "disco_pickaxe_music": {
+    "subtitle": "sounds.morepickaxes.disco_pickaxe_music",
+    "sounds": [
+      {
+        "name": "morepickaxes:bad_apple",
+        "stream": true
+      },
+      {
+        "name": "morepickaxes:comptine",
+        "stream": true
+      },
+      {
+        "name": "morepickaxes:hoppin_blocks",
+        "stream": true
+      },
+      {
+        "name": "morepickaxes:mad_world",
+        "stream": true
+      }
+    ]
+  }
+}
