@@ -9,7 +9,6 @@ This mod adds more pickaxes to the game. It also adds a few new ores, which are 
 ### Adds new pickaxes
 - Ruby Pickaxe
 - Obsidian Pickaxe
-- Disco Pickaxe (plays music when being held) **(WIP)**
 
 ## Dependencies
 - Fabric API
