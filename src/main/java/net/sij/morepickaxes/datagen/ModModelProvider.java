@@ -26,8 +26,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.MUSIC_DISC_BAD_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_COMPTINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_HOPPIN_BLOCKS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_MAD_WORLD, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.RUBY_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSIDIAN_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.DISCO_PICKAXE, Models.HANDHELD);
     }
 }

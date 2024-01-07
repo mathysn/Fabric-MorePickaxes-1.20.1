@@ -22,7 +22,12 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.RUBY_PICKAXE);
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
-                        entries.add(ModItems.DISCO_PICKAXE);
+
+                        // Music Discs
+                        entries.add(ModItems.MUSIC_DISC_BAD_APPLE);
+                        entries.add(ModItems.MUSIC_DISC_COMPTINE);
+                        entries.add(ModItems.MUSIC_DISC_HOPPIN_BLOCKS);
+                        entries.add(ModItems.MUSIC_DISC_MAD_WORLD);
 
                         // Blocks
                         entries.add(ModBlocks.RUBY_BLOCK);

@@ -5,21 +5,36 @@
       "morepickaxes:metal_detector_found_ore"
     ]
   },
-  "disco_pickaxe_music": {
-    "subtitle": "sounds.morepickaxes.disco_pickaxe_music",
+  "music_disc_bad_apple": {
+    "subtitle": "sounds.morepickaxes.music_disc_bad_apple",
     "sounds": [
       {
         "name": "morepickaxes:bad_apple",
         "stream": true
-      },
-      {
-        "name": "morepickaxes:comptine",
-        "stream": true
-      },
+      }
+    ]
+  },
+  "music_disc_comptine": {
+      "subtitle": "sounds.morepickaxes.music_disc_comptine",
+      "sounds": [
+        {
+          "name": "morepickaxes:comptine",
+          "stream": true
+        }
+      ]
+  },
+  "music_disc_hoppin_blocks": {
+    "subtitle": "sounds.morepickaxes.music_disc_hoppin_blocks",
+    "sounds": [
       {
         "name": "morepickaxes:hoppin_blocks",
         "stream": true
-      },
+      }
+    ]
+  },
+  "music_disc_mad_world": {
+    "subtitle": "sounds.morepickaxes.music_disc_mad_world",
+    "sounds": [
       {
         "name": "morepickaxes:mad_world",
         "stream": true

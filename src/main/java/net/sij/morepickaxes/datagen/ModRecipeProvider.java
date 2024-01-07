@@ -54,14 +54,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.OBSIDIAN)
                 .criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_PICKAXE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DISCO_PICKAXE, 1)
-                .pattern("NNN")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('S', Items.STICK)
-                .input('N', Items.NOTE_BLOCK)
-                .criterion(hasItem(Items.NOTE_BLOCK), conditionsFromItem(Items.NOTE_BLOCK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DISCO_PICKAXE)));
     }
 }

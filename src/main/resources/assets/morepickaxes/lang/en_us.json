@@ -4,7 +4,16 @@
 
   "item.morepickaxes.ruby_pickaxe": "Ruby Pickaxe",
   "item.morepickaxes.obsidian_pickaxe": "Obsidian Pickaxe",
-  "item.morepickaxes.disco_pickaxe": "Disco Pickaxe",
+
+  "item.morepickaxes.music_disc_bad_apple": "Music Disc",
+  "item.morepickaxes.music_disc_bad_apple.desc": "ShinkoNet - Bad Apple",
+  "item.morepickaxes.music_disc_comptine": "Music Disc",
+  "item.morepickaxes.music_disc_comptine.desc": "YourWorstNightmare - Comptine",
+  "item.morepickaxes.music_disc_hoppin_blocks": "Music Disc",
+  "item.morepickaxes.music_disc_hoppin_blocks.desc": "Hyperdron - Hoppin' Blocks",
+  "item.morepickaxes.music_disc_mad_world": "Music Disc",
+  "item.morepickaxes.music_disc_mad_world.desc": "Petraller - Mad World",
+
 
   "block.morepickaxes.ruby_block": "Block of Ruby",
 
