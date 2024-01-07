@@ -1,27 +1,23 @@
 package net.sij.morepickaxes.item.pickaxes;
 
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.option.GameOptions;
-import net.minecraft.client.sound.Sound;
-import net.minecraft.client.sound.SoundInstance;
-import net.minecraft.client.sound.SoundManager;
-import net.minecraft.client.sound.WeightedSoundSet;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 import net.sij.morepickaxes.sound.ModSounds;
-import org.jetbrains.annotations.Nullable;
+import net.sij.morepickaxes.sound.instance.DiscoPickaxeSoundInstance;
 
 public class DiscoPickaxeItem extends PickaxeItem {
-    private boolean isPlaying = false;
+    private boolean isToggled = false;
 
 
     public DiscoPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
@@ -29,88 +25,36 @@ public class DiscoPickaxeItem extends PickaxeItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity player, int slot, boolean selected) {
-        SoundEvent soundEvent = ModSounds.DISCO_PICKAXE_MUSIC;
-        SoundInstance sound = new SoundInstance() {
-            @Override
-            public Identifier getId() {
-                return soundEvent.getId();
-            }
-
-            @Nullable
-            @Override
-            public WeightedSoundSet getSoundSet(SoundManager soundManager) {
-                return null;
-            }
-
-            @Override
-            public Sound getSound() {
-                return null;
-            }
-
-            @Override
-            public SoundCategory getCategory() {
-                return SoundCategory.PLAYERS;
-            }
-
-            @Override
-            public boolean isRepeatable() {
-                return true;
-            }
-
-            @Override
-            public boolean isRelative() {
-                return false;
-            }
-
-            @Override
-            public int getRepeatDelay() {
-                return 0;
-            }
-
-            @Override
-            public float getVolume() {
-                return 1f;
-            }
-
-            @Override
-            public float getPitch() {
-                return 1f;
-            }
-
-            @Override
-            public double getX() {
-                return 0;
-            }
-
-            @Override
-            public double getY() {
-                return 0;
-            }
-
-            @Override
-            public double getZ() {
-                return 0;
-            }
-
-            @Override
-            public AttenuationType getAttenuationType() {
-                return SoundInstance.AttenuationType.NONE;
-            }
-        };
-
-        if(selected) {
-            if(!isPlaying) {
-                player.playSound(ModSounds.DISCO_PICKAXE_MUSIC, 1f, 1f);
-                isPlaying = true;
-            }
-        } else {
-            if(isPlaying) {
-                MinecraftClient.getInstance().getSoundManager().stop(sound);
-                isPlaying = false;
-            }
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        if (world.isClient()) {
+            return TypedActionResult.pass(player.getStackInHand(hand));
         }
 
-        // FIXME: THIS IS NOT WORKING !!! NEEDS TO BE FIXED !!!
+        DiscoPickaxeSoundInstance sound = new DiscoPickaxeSoundInstance(player, isToggled);
+
+        if(!isToggled) {
+            player.sendMessage(Text.literal("Disco mode enabled!"));
+            MinecraftClient.getInstance().getSoundManager().play(sound);
+            isToggled = true;
+        } else {
+            player.sendMessage(Text.literal("Disco mode disabled!"));
+            isToggled = false;
+        }
+
+        return TypedActionResult.success(player.getStackInHand(hand));
     }
+
+//    @Override
+//    public void inventoryTick(ItemStack stack, World world, Entity player, int slot, boolean selected) {
+//        DiscoPickaxeSoundInstance sound = new DiscoPickaxeSoundInstance(player, canPlaySoundInstance);
+//        MinecraftClient client = MinecraftClient.getInstance();
+//
+//
+//        if (selected && canPlaySoundInstance) {
+//            client.getSoundManager().play(sound);
+//        } else {
+//            client.getSoundManager().stop(sound);
+//        }
+//        canPlaySoundInstance = !selected;
+//    }
 }
