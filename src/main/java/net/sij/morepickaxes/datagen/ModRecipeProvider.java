@@ -54,5 +54,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.OBSIDIAN)
                 .criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMERALD_PICKAXE, 1)
+                .pattern("EEE")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TNT_PICKAXE, 1)
+                .pattern("TNT")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('T', Items.TNT)
+                .input('N', Items.NETHER_STAR)
+                .criterion(hasItem(Items.TNT), conditionsFromItem(Items.NETHER_STAR))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TNT_PICKAXE)));
     }
 }

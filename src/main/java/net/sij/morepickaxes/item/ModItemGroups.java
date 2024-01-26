@@ -22,6 +22,8 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.RUBY_PICKAXE);
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
+                        entries.add(ModItems.EMERALD_PICKAXE);
+                        entries.add(ModItems.TNT_PICKAXE);
 
                         // Music Discs
                         entries.add(ModItems.MUSIC_DISC_BAD_APPLE);

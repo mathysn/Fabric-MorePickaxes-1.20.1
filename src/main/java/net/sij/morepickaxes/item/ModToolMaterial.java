@@ -11,7 +11,9 @@ public enum ModToolMaterial implements ToolMaterial {
     RUBY(MiningLevels.DIAMOND, 1500, 7.5f, 3.5f, 15,
             () -> Ingredient.ofItems(ModItems.RUBY)),
     OBSIDIAN(MiningLevels.NETHERITE, 1800, 8.5f, 5.0f, 15,
-            () -> Ingredient.ofItems(Items.OBSIDIAN));
+            () -> Ingredient.ofItems(Items.OBSIDIAN)),
+    EMERALD(MiningLevels.DIAMOND, 1350, 6.0f, 3.0f, 15,
+            () -> Ingredient.ofItems(Items.EMERALD));
 
     private final int itemDurability;
     private final float miningSpeed;

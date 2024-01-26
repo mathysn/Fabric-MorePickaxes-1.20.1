@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.sij.morepickaxes.MorePickaxes;
 import net.sij.morepickaxes.item.custom.MetalDetectorItem;
+import net.sij.morepickaxes.item.custom.pickaxes.TNTPickaxeItem;
 import net.sij.morepickaxes.sound.ModSounds;
 
 public class ModItems {
@@ -30,6 +31,10 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.RUBY, 2, 2f, new FabricItemSettings()));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
             new PickaxeItem(ModToolMaterial.OBSIDIAN, 3, 2f, new FabricItemSettings()));
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe",
+            new PickaxeItem(ModToolMaterial.EMERALD, 2, 2f, new FabricItemSettings()));
+    public static final Item TNT_PICKAXE = registerItem("tnt_pickaxe",
+            new TNTPickaxeItem(ToolMaterials.DIAMOND, 2, 2f, new FabricItemSettings().maxCount(1).maxDamage(1300)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MorePickaxes.MOD_ID, name), item);
