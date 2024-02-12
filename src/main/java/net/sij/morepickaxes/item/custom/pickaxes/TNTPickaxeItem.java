@@ -13,7 +13,7 @@ import net.minecraft.world.WorldEvents;
 import net.minecraft.world.explosion.Explosion;
 
 public class TNTPickaxeItem extends PickaxeItem {
-    private static final float TNT_RADIUS = 10.0f;
+    private static final float TNT_RADIUS = 2.0f;
     public TNTPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -31,13 +31,4 @@ public class TNTPickaxeItem extends PickaxeItem {
 
         return super.postMine(stack, world, state, pos, miner);
     }
-
-//    @Override
-//    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-//        if(!world.isClient){
-//            user.getItemCooldownManager().set(this, COOLDOWN);
-//            world.createExplosion(user, user.getX(), user.getY(), user.getZ(), TNT_RADIUS, true, true);
-//        }
-//        return super.use(world, user, hand);
-//    }
 }
