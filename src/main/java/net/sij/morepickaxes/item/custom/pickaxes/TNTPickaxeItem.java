@@ -23,7 +23,6 @@ public class TNTPickaxeItem extends PickaxeItem {
         Explosion explosion = new Explosion(world, miner, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, TNT_RADIUS, false, Explosion.DestructionType.DESTROY);
         explosion.collectBlocksAndDamageEntities();
         explosion.affectWorld(true);
-        miner.sendMessage(Text.literal("Boom!"));
 
         stack.damage(1, miner, (player) -> {
             player.sendToolBreakStatus(player.getActiveHand());
